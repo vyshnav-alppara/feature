@@ -38,6 +38,7 @@ Install product_crud
   cd product_crud
   cp .env.eample .env //change connection credentials on .env
   composer Install
+  php artisan key:generate
   php artisan migrate
   php artisan db:seed --class=PrductSeeder //For seeding fake data
   php artisan serve
